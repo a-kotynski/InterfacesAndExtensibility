@@ -23,7 +23,7 @@ namespace InterfacesAndExtensibility
                 streamWriter.WriteLine("ERROR: " + message); 
             }
         }
-
+         
         public void LogInfo(string message)
         {
             using (var streamWriter = new StreamWriter(Path, true))
