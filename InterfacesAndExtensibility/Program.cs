@@ -18,18 +18,12 @@ namespace InterfacesAndExtensibility
 
         public void LogError(string message)
         {
-            using (var streamWriter = new StreamWriter(Path, true))
-            {
-                streamWriter.WriteLine("ERROR: " + message); 
-            }
+            Log(message, "ERROR");
         }
          
         public void LogInfo(string message)
         {
-            using (var streamWriter = new StreamWriter(Path, true))
-            {
-                streamWriter.WriteLine("ERROR: " + message);
-            }
+            Log(message, "INFO");
         }
         private void Log(string message, string messageType)
         {
